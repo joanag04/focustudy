@@ -299,7 +299,7 @@ class MainPage extends StatelessWidget {
                       height: 320,
                       child: GestureDetector(
                         onTap: () {
-                          Navigator.pushNamed(context, '/calenderpage');
+                          Navigator.pushNamed(context, '/calendarpage');
                         },
                         child: const Card(
                           elevation: 5,
