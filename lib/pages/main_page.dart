@@ -162,37 +162,42 @@ class MainPage extends StatelessWidget {
                     child: Container(
                       width: 270,
                       height: 320,
-                      child: const Card(
-                        elevation: 5,
-                        margin:
-                            EdgeInsets.symmetric(vertical: 10, horizontal: 5),
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Icon(Icons.done, color: Colors.blue, size: 28),
-                            SizedBox(
-                              height: 8,
-                            ),
-                            Padding(
-                              padding: EdgeInsets.all(12.0),
-                              child: Text('Lista de tarefas',
-                                  textAlign: TextAlign.center,
-                                  style: TextStyle(
-                                    fontSize: 18,
-                                    fontWeight: FontWeight.bold,
-                                  )),
-                            ),
-                            SizedBox(
-                              height: 8,
-                            ),
-                            Padding(
-                              padding: const EdgeInsets.all(10.0),
-                              child: Text(
-                                  'Organize as suas tarefas de estudo de maneira eficiente',
-                                  style: TextStyle(fontSize: 16),
-                                  textAlign: TextAlign.center),
-                            ),
-                          ],
+                      child: GestureDetector(
+                        onTap: () {
+                          Navigator.pushNamed(context, '/todopage');
+                        },
+                        child: const Card(
+                          elevation: 5,
+                          margin:
+                              EdgeInsets.symmetric(vertical: 10, horizontal: 5),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Icon(Icons.done, color: Colors.blue, size: 28),
+                              SizedBox(
+                                height: 8,
+                              ),
+                              Padding(
+                                padding: EdgeInsets.all(12.0),
+                                child: Text('Lista de tarefas',
+                                    textAlign: TextAlign.center,
+                                    style: TextStyle(
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.bold,
+                                    )),
+                              ),
+                              SizedBox(
+                                height: 8,
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.all(10.0),
+                                child: Text(
+                                    'Organize as suas tarefas de estudo de maneira eficiente',
+                                    style: TextStyle(fontSize: 16),
+                                    textAlign: TextAlign.center),
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                     ),
@@ -202,37 +207,42 @@ class MainPage extends StatelessWidget {
                     child: Container(
                       width: 270,
                       height: 320,
-                      child: const Card(
-                        elevation: 5,
-                        margin:
-                            EdgeInsets.symmetric(vertical: 10, horizontal: 5),
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Icon(Icons.book, color: Colors.green, size: 28),
-                            SizedBox(
-                              height: 8,
-                            ),
-                            Padding(
-                              padding: EdgeInsets.all(12.0),
-                              child: Text('Disciplinas e Tópicos',
-                                  style: TextStyle(
-                                    fontSize: 18,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                  textAlign: TextAlign.center),
-                            ),
-                            SizedBox(
-                              height: 8,
-                            ),
-                            Padding(
-                              padding: const EdgeInsets.all(10.0),
-                              child: Text(
-                                  'Acompanhe os seus progressos em diferentes disciplinas',
-                                  style: TextStyle(fontSize: 16),
-                                  textAlign: TextAlign.center),
-                            ),
-                          ],
+                      child: GestureDetector(
+                        onTap: () {
+                          Navigator.pushNamed(context, '/subjectspage');
+                        },
+                        child: const Card(
+                          elevation: 5,
+                          margin:
+                              EdgeInsets.symmetric(vertical: 10, horizontal: 5),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Icon(Icons.book, color: Colors.green, size: 28),
+                              SizedBox(
+                                height: 8,
+                              ),
+                              Padding(
+                                padding: EdgeInsets.all(12.0),
+                                child: Text('Disciplinas e Tópicos',
+                                    style: TextStyle(
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                    textAlign: TextAlign.center),
+                              ),
+                              SizedBox(
+                                height: 8,
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.all(10.0),
+                                child: Text(
+                                    'Acompanhe os seus progressos em diferentes disciplinas',
+                                    style: TextStyle(fontSize: 16),
+                                    textAlign: TextAlign.center),
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                     ),
@@ -242,37 +252,42 @@ class MainPage extends StatelessWidget {
                     child: Container(
                       width: 270,
                       height: 320,
-                      child: const Card(
-                        elevation: 5,
-                        margin:
-                            EdgeInsets.symmetric(vertical: 10, horizontal: 5),
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Icon(Icons.edit, color: Colors.orange, size: 28),
-                            SizedBox(
-                              height: 8,
-                            ),
-                            Padding(
-                              padding: EdgeInsets.all(12.0),
-                              child: Text('Sessões de Estudos',
-                                  style: TextStyle(
-                                    fontSize: 18,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                  textAlign: TextAlign.center),
-                            ),
-                            SizedBox(
-                              height: 8,
-                            ),
-                            Padding(
-                              padding: EdgeInsets.all(10.0),
-                              child: Text(
-                                  'Monitore as suas sessões de estudo através de timers',
-                                  style: TextStyle(fontSize: 16),
-                                  textAlign: TextAlign.center),
-                            ),
-                          ],
+                      child: GestureDetector(
+                        onTap: () {
+                          Navigator.pushNamed(context, '/timerpage');
+                        },
+                        child: const Card(
+                          elevation: 5,
+                          margin:
+                              EdgeInsets.symmetric(vertical: 10, horizontal: 5),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Icon(Icons.edit, color: Colors.orange, size: 28),
+                              SizedBox(
+                                height: 8,
+                              ),
+                              Padding(
+                                padding: EdgeInsets.all(12.0),
+                                child: Text('Sessões de Estudos',
+                                    style: TextStyle(
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                    textAlign: TextAlign.center),
+                              ),
+                              SizedBox(
+                                height: 8,
+                              ),
+                              Padding(
+                                padding: EdgeInsets.all(10.0),
+                                child: Text(
+                                    'Controle as suas sessões de estudo através de timers',
+                                    style: TextStyle(fontSize: 16),
+                                    textAlign: TextAlign.center),
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                     ),
@@ -282,38 +297,43 @@ class MainPage extends StatelessWidget {
                     child: Container(
                       width: 270,
                       height: 320,
-                      child: const Card(
-                        elevation: 5,
-                        margin:
-                            EdgeInsets.symmetric(vertical: 10, horizontal: 5),
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Icon(Icons.calendar_month,
-                                color: Colors.purple, size: 28),
-                            SizedBox(
-                              height: 8,
-                            ),
-                            Padding(
-                              padding: EdgeInsets.all(12.0),
-                              child: Text('Calendário',
-                                  style: TextStyle(
-                                    fontSize: 18,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                  textAlign: TextAlign.center),
-                            ),
-                            SizedBox(
-                              height: 8,
-                            ),
-                            Padding(
-                              padding: EdgeInsets.all(10.0),
-                              child: Text(
-                                  'Marque datas importantes e mantenha-se organizado',
-                                  style: TextStyle(fontSize: 16),
-                                  textAlign: TextAlign.center),
-                            ),
-                          ],
+                      child: GestureDetector(
+                        onTap: () {
+                          Navigator.pushNamed(context, '/calenderpage');
+                        },
+                        child: const Card(
+                          elevation: 5,
+                          margin:
+                              EdgeInsets.symmetric(vertical: 10, horizontal: 5),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Icon(Icons.calendar_month,
+                                  color: Colors.purple, size: 28),
+                              SizedBox(
+                                height: 8,
+                              ),
+                              Padding(
+                                padding: EdgeInsets.all(12.0),
+                                child: Text('Calendário',
+                                    style: TextStyle(
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                    textAlign: TextAlign.center),
+                              ),
+                              SizedBox(
+                                height: 8,
+                              ),
+                              Padding(
+                                padding: EdgeInsets.all(10.0),
+                                child: Text(
+                                    'Marque datas importantes e mantenha-se organizado',
+                                    style: TextStyle(fontSize: 16),
+                                    textAlign: TextAlign.center),
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                     ),
@@ -323,38 +343,43 @@ class MainPage extends StatelessWidget {
                     child: Container(
                       width: 270,
                       height: 320,
-                      child: const Card(
-                        elevation: 5,
-                        margin:
-                            EdgeInsets.symmetric(vertical: 10, horizontal: 5),
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Icon(Icons.edit_document,
-                                color: Colors.red, size: 28),
-                            SizedBox(
-                              height: 8,
-                            ),
-                            Padding(
-                              padding: EdgeInsets.all(12.0),
-                              child: Text('Review de sessões',
-                                  style: TextStyle(
-                                    fontSize: 18,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                  textAlign: TextAlign.center),
-                            ),
-                            SizedBox(
-                              height: 8,
-                            ),
-                            Padding(
-                              padding: EdgeInsets.all(10.0),
-                              child: Text(
-                                  'Revise e avalie as suas sessões de estudo',
-                                  style: TextStyle(fontSize: 16),
-                                  textAlign: TextAlign.center),
-                            ),
-                          ],
+                      child: GestureDetector(
+                        onTap: () {
+                          Navigator.pushNamed(context, '/reviewpage');
+                        },
+                        child: const Card(
+                          elevation: 5,
+                          margin:
+                              EdgeInsets.symmetric(vertical: 10, horizontal: 5),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Icon(Icons.edit_document,
+                                  color: Colors.red, size: 28),
+                              SizedBox(
+                                height: 8,
+                              ),
+                              Padding(
+                                padding: EdgeInsets.all(12.0),
+                                child: Text('Review de sessões',
+                                    style: TextStyle(
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                    textAlign: TextAlign.center),
+                              ),
+                              SizedBox(
+                                height: 8,
+                              ),
+                              Padding(
+                                padding: EdgeInsets.all(10.0),
+                                child: Text(
+                                    'Revise e avalie as suas sessões de estudo',
+                                    style: TextStyle(fontSize: 16),
+                                    textAlign: TextAlign.center),
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                     ),
