@@ -26,7 +26,10 @@ class _CalendarPageState extends State<CalendarPage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Color.fromARGB(255, 121, 169, 191),
-        title: const Text("CALENDÁRIO"),
+        title: const Text(
+          "CALENDÁRIO",
+          style: TextStyle(color: Colors.white),
+        ),
         centerTitle: true,
       ),
       floatingActionButton: FloatingActionButton.extended(
