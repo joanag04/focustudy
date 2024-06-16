@@ -63,12 +63,12 @@ class _DisciplinasPageState extends State<SubjectsPage> {
         TextEditingController topicoController = TextEditingController();
         return AlertDialog(
           title: const Text(
-            'Adicionar Novo Tópico',
+            'Adicionar Novo Tópico/Meta',
             style: TextStyle(color: Color.fromARGB(255, 121, 169, 191)),
           ),
           content: TextField(
             controller: topicoController,
-            decoration: InputDecoration(hintText: 'Nome do Tópico'),
+            decoration: InputDecoration(hintText: 'Nome do Tópico/Meta'),
           ),
           actions: <Widget>[
             TextButton(
